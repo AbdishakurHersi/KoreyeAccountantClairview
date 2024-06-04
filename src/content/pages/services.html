@@ -11,225 +11,167 @@ eleventyNavigation:
 {% extends "layouts/base.html" %} {% block head %}
 <link rel="stylesheet" href="/assets/css/services.css" />
 {% endblock %} {% block body %}
-
 <!-- ============================================ -->
-<!--                    LANDING                   -->
+<!--                   Banner                     -->
 <!-- ============================================ -->
 
-<section id="int-hero">
-  <h1 id="home-h">Our Projects</h1>
-  <picture>
+<div id="banner-1403">
+  <div class="cs-container">
+    <span class="cs-int-title">Services</span>
+  </div>
+  <!--Background Image-->
+  <picture class="cs-background">
+    <!--Mobile Image-->
     <source
       media="(max-width: 600px)"
-      srcset="/assets/images/cabinets2-m.jpg"
+      srcset="/assets/images/Banneracross.jpg"
     />
-    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg" />
+    <!--Tablet and above Image-->
+    <source
+      media="(min-width: 601px)"
+      srcset="/assets/images/Banneracross.jpg"
+    />
     <img
-      aria-hidden="true"
       decoding="async"
-      src="/assets/images/cabinets2.jpg"
-      alt="kitchen cabinets"
-      loading="eager"
-      width="2500"
-      height="1667"
+      src="/assets/images/Banneracross.jpg"
+      alt="people laughing"
+      width="1280"
+      height="568"
+      aria-hidden="true"
     />
   </picture>
-</section>
+</div>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                 Content Page                 -->
 <!-- ============================================ -->
 
-<section id="gallery">
+<!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+<section id="content-page-851">
   <div class="cs-container">
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <div class="cs-row cs-row-1">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port1-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port1.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port1.jpg"
-            alt="new hallway"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port4-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port4.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port4.jpg"
-            alt="new home construction"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture3">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port7-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port7.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port7.jpg"
-            alt="building a new wall"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port2-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port2.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port2.jpg"
-            alt="new kitchen"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port5-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port5.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port5.jpg"
-            alt="apartment addition"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture3">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port8-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port8.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port8.jpg"
-            alt="kew kitchen cabinets"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port3-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port3.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port3.jpg"
-            alt="new kitchen"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port6-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port6.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port6.jpg"
-            alt="apartment addition"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-        <picture class="cs-picture cs-picture3">
-          <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/portfolio/port9-m.jpg"
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/portfolio/port9.jpg"
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/portfolio/port9.jpg"
-            alt="kew kitchen cabinets"
-            loading="lazy"
-            width="400"
-            height="560"
-          />
-        </picture>
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
+    <div class="cs-content">
+      <h1 class="cs-title">
+        Comprehensive Accounting and Tax Services for Individuals and Businesses
+      </h1>
+      <h2>Accounting Services</h2>
+      <p>
+        We ensure you get the maximum refund with our expert tax preparation for
+        individuals and families. Whether you're filing general single T4, T4A,
+        T5, T5A forms, or managing taxes for Uber/taxi drivers, students, or
+        retired seniors, our services are designed to be affordable without
+        compromising on quality.
+      </p>
+      <h2>Self-Employed and Contractors</h2>
+      <p>
+        Our specialized services cater to self-employed individuals and large
+        businesses, including contractors. We handle everything from tax
+        preparation to detailed financial management, ensuring your business
+        runs smoothly and compliantly. Incorporation Services for Truck Drivers
+        We offer tailored incorporation services for truck drivers, whether you
+        own trucks or not. Our packages are competitively priced at $500, with
+        costs adjusted based on your business size, ensuring you get the best
+        value for your investment.
+      </p>
+      <h2>Bookkeeping & Payroll Solutions</h2>
+      <p>
+        Our comprehensive bookkeeping and payroll services are customized to fit
+        the size of your business. We guarantee the lowest prices in the market,
+        providing exceptional value while keeping your financial records
+        accurate and up-to-date.
+      </p>
+      <h2>Tax Services</h2>
+      <h3>Individual Tax Services</h3>
+      <p>
+        Tax season can be stressful, but it doesn’t have to be. Our expert team
+        ensures that your tax returns are accurate, compliant, and optimized for
+        the best possible refund. Whether you are a single filer, an Uber/taxi
+        driver, a student, or a retired senior, we provide tailored tax services
+        to meet your specific needs.
+      </p>
+      <h3>Corporate Tax Services</h3>
+      <p>
+        Navigating corporate tax laws can be complex. Our team takes a
+        step-by-step approach to understand your business landscape and offers
+        professional advice to maximize your corporate tax returns. We handle
+        the preparation of federal and provincial tax returns, ensuring
+        compliance and optimizing your financial outcomes.
+      </p>
+      <h2>Business Registration & Incorporation</h2>
+      <h3>Incorporation Services for Truck Drivers</h3>
+      <p>
+        Simplify the incorporation process with our specialized services.
+        Whether you own trucks or not, our packages include consultation on
+        articles, share structuring, registration, and business number setup. We
+        provide a comprehensive solution at a competitive price, ensuring you
+        start your business on the right foot.
+      </p>
+      <h2>Bookkeeping & Payroll Services</h2>
+      <h3>Comprehensive Bookkeeping</h3>
+      <p>
+        Our bookkeeping services ensure that all your financial transactions are
+        accurately recorded in compliance with Canadian GAAP. From sales and
+        expenses to payroll and benefit costs, we handle it all. We also offer
+        bank reconciliations and accounts payable services to keep your finances
+        organized and up-to-date.
+      </p>
+      <h3>Payroll Solutions for Small Businesses</h3>
+      <p>
+        Outsource your payroll to us and streamline your business operations. We
+        handle everything from payroll processing and tax calculations to
+        employee benefits administration and year-end T4 generation. Our payroll
+        services are available for businesses in any province in Canada,
+        ensuring compliance with all regulations.
+      </p>
+      <h2>Financial & Strategic Planning</h2>
+      <h3>Business Planning</h3>
+      <p>
+        We work with you to create comprehensive business plans that outline
+        your goals and provide a clear path to achieving them. Our business plan
+        services include market research, financial strategy, cashflow
+        forecasting, and more, all reviewed by experienced accountants to ensure
+        accuracy and effectiveness.
+      </p>
+      <h3>Financial Planning & Consulting</h3>
+      <p>
+        Our financial planning services support your business development and
+        long-term sustainability. We help you develop budgets, analyze costs,
+        and identify opportunities for profitability and efficiency. Our
+        consulting services are designed to optimize your financial and treasury
+        processes.
+      </p>
     </div>
-    <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/ServiceImage.jpg"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/ServiceImage.jpg"
+        />
+        <img
+          decoding="async"
+          src="/assets/images/ServiceImage.jpg"
+          alt="person"
+          width="542"
+          height="520"
+          aria-hidden="true"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
-{% include 'components/cta.html' %} {% endblock %}
+{% endblock %}
